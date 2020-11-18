@@ -18,6 +18,7 @@ namespace eosio {
         require_recipient(account);
     }
 
+    //action
     void ogxlog::logreclaim(
             eosio::name from,
             eosio::symbol currencyKey,
@@ -27,6 +28,7 @@ namespace eosio {
         require_recipient(from);
     }
 
+    //action
     void ogxlog::logrefund(
             eosio::name from,
             eosio::symbol currencyKey,

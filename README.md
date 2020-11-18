@@ -24,16 +24,16 @@ add_subdirectory(ogx.log)
  
 ## 方案
 ```
-合约帐号: organixlogll
+合约帐号: log.ogx
 ```
 
 ## 部署
 ```
-cleos -u 'https://eospush.tokenpocket.pro' system newaccount itokenpocket organixlogll EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu --buy-ram '50.0000 EOS' --stake-net '5.0000 EOS' --stake-cpu '10.0000 EOS'
-cleos -u 'https://eospush.tokenpocket.pro' set account permission organixlogll active '{"threshold": 1,"keys": [{"key": "EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu", "weight": 1}],"accounts": [{"permission":{"actor":"organixtokeo","permission":"eosio.code"},"weight":1}]}' owner -p organixlogll@owner
+cleos -u 'https://eospush.tokenpocket.pro' system newaccount ogx log.ogx EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu --buy-ram '10.0000 EOS' --stake-net '0.0100 EOS' --stake-cpu '0.0100 EOS'
+cleos -u 'https://eospush.tokenpocket.pro' set account permission log.ogx active '{"threshold": 1,"keys": [{"key": "EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu", "weight": 1}],"accounts": [{"permission":{"actor":"core.ogx","permission":"eosio.code"},"weight":1}]}' owner -p log.ogx@owner
 
 cd build
 
-cleos -u 'https://eospush.tokenpocket.pro' set contract organixlogll ./ogx.log -p organixlogll -x 180
+cleos -u 'https://eospush.tokenpocket.pro' set contract log.ogx ./ogx.log -p log.ogx -x 180
 
 ```

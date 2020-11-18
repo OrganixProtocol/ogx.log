@@ -40,7 +40,7 @@ http://api.kylin.alohaeos.com
 curl http://faucet-kylin.blockzone.net/get_token/itokenpocket
 
 cleos -u 'http://api.kylin.alohaeos.com' system newaccount itokenpocket organixlogll EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu --buy-ram '50.0000 EOS' --stake-net '5.0000 EOS' --stake-cpu '10.0000 EOS'
-cleos -u 'http://api.kylin.alohaeos.com' set account permission organixlogll active '{"threshold": 1,"keys": [{"key": "EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu", "weight": 1}],"accounts": [{"permission":{"actor":"organixtokeo","permission":"eosio.code"},"weight":1}]}' owner -p organixlogll@owner
+cleos -u 'http://api.kylin.alohaeos.com' set account permission organixlogll active '{"threshold": 1,"keys": [{"key": "EOS5ivbcmkXpjTcmHDjS9Ywh8spFQSnZzsniJ1rLtqUHW2DkNbRMu", "weight": 1}],"accounts": [{"permission":{"actor":"organixtokep","permission":"eosio.code"},"weight":1}]}' owner -p organixlogll@owner
 
 cd build
 
